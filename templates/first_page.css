@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #100721;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+}
+
+.container-fluid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  gap: 20px;
+  padding: 20px;
+}
+
+.first-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.carousel-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden; /* Hide overflow for carousel effect */
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.5s ease-in-out; /* Transition for sliding effect */
+}
+
+.carousel-item {
+  min-width: 100%; /* Make each item take full width */
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel h2 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.carousel span {
+  display: block;
+  font-size: 1rem;
+  color: #777;
+}
