@@ -233,7 +233,7 @@ def handle_new_message(data):
 @app.route('/room_join/<room_id>')
 def room_join(room_id):
     if room_id in rooms.keys():
-        return render_template('second_image.html', room_id=room_id)
+        return render_template('second_page.html', room_id=room_id)
     
     return redirect('/')
 
